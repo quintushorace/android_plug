@@ -4,9 +4,9 @@
 <ul class="items">
 	<li style="background: #FFFFFF"><article class="wrap">
 	<h1><a href="#" title="title">Android博客周刊专题之＃插件化开发＃</a></h1>
-	<div class="content">本期专栏目讨论插件化开发。插件化涉及的东西很多，所以我们需要多个维度去学习。大概分为5个部分：预备知识、入门、进阶、系列、类库。一步一步深入了解插件的原理。本专栏会不定时更新相关内容，请留意更新的消息。转自：http://www.androidblog.cn/index.php/Index/detail/id/16#</div>
-	<footer> Posted <time datetime="time">2016-03-16</time> by
-	Jomeslu. </footer> </article></li>
+	<div class="content">本期专栏目讨论插件化开发。插件化涉及的东西很多，所以我们需要多个维度去学习。大概分为5个部分：预备知识、入门、进阶、系列、类库。一步一步深入了解插件的原理。本专栏会不定时更新相关内容，请留意更新的消息。</div>
+	<footer>转自：http://www.androidblog.cn/index.php/Index/detail/id/16#</footer> </article></li>
+
 </ul>
 
 <article class="wrap"
