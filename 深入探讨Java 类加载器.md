@@ -1,42 +1,21 @@
 <head>
+
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <title>深入探讨 Java 类加载器</title>
-<link rel="schema.DC" href="http://purl.org/DC/elements/1.0/"/>
-<link rel="SHORTCUT ICON" href="//www.ibm.com/favicon.ico"/>
-<meta name="DC.Rights" content="© Copyright IBM Corporation 2010"/>
-<meta name="Keywords" content="Java, 类加载器 , Class loader, OSGi, tttjca"/>
-<meta name="DC.Date" scheme="iso8601" content="2010-03-01"/>
-<meta name="Source"  content="v17 delivery:developerWorks"/>
+<article><li><time datetime="time">2016-09-29</time> 转自：https://www.ibm.com/developerworks/cn/java/j-lo-classloader/#code2 </li></article>
 <meta name="Security" content="Public"/>
 <meta name="Abstract" content="类加载器（class loader）是 Java 中的一个很重要的概念。类加载器负责加载 Java 类的字节代码到 Java 虚拟机中。本文首先详细介绍了 Java 类加载器的基本概念，包括代理模式、加载类的具体过程和线程上下文类加载器等，接着介绍如何开发自己的类加载器，最后介绍了类加载器在 Web 容器和 OSGi 中的应用。"/>
 <meta name="Description" content="类加载器（class loader）是 Java 中的一个很重要的概念。类加载器负责加载 Java 类的字节代码到 Java 虚拟机中。本文首先详细介绍了 Java 类加载器的基本概念，包括代理模式、加载类的具体过程和线程上下文类加载器等，接着介绍如何开发自己的类加载器，最后介绍了类加载器在 Web 容器和 OSGi 中的应用。"/>
-<meta name="IBM.Effective" scheme="W3CDTF" content="2010-03-01"/>
-<meta name="Owner" content="developerWorks/China/IBM"/>
-<meta name="DC.Language" scheme="rfc1766" content="zh-CN"/>
-<meta name="IBM.SpecialPurpose" content="SP001"/>
-<meta name="IBM.Country" content="CN"/>
-<meta name="Robots" content="index,follow"/>
-<meta name="DC.Type" scheme="IBM_ContentClassTaxonomy" content="CT316" />
-<meta name="DC.Subject" scheme="IBM_SubjectTaxonomy" content="TT300" />
-<meta name="dW.ContentArea" content="java" />
-<meta name="dW.Topic" content="应用开发,JVM (Java Virtual Machine)" />
 
 </head>
 <body id="ibm-com">
 
+
 <div id="fdiv" class="ibm-access"></div><!-- MASTHEAD_END -->
-	    
-<!-- LAYOUT -->
-<!-- LEADSPACE_BEGIN --> 
-<div id="ibm-leadspace-head">
-	<!-- LEADSPACE_BODY_BEGIN --> 
-	<div id="ibm-leadspace-body">
-		<!-- Navigation_Trail_BEGIN -->
-      <ul id="ibm-navigation-trail"><li><a href="http://www.ibm.com/developerworks/cn/">developerWorks 中国</a></li><li><a href="http://www.ibm.com/developerworks/cn/topics/">技术主题</a></li><li><a href="http://www.ibm.com/developerworks/cn/java/">Java technology</a></li><li><a href="http://www.ibm.com/developerworks/cn/views/java/libraryview.jsp">文档库</a></li></ul>
-		<!-- END_Navigation_Trail -->
+	
 			<!-- Title_Subtitle -->
 			<h1>深入探讨 Java 类加载器</h1>
-	</div>
+	
 	<!-- LEADSPACE_BODY_END --> 
 	<!-- SUMMARY_BEGIN -->
 	<div id="dw-summary-area" class="dw-summary-columns">
